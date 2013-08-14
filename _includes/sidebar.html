@@ -1,8 +1,20 @@
 <h3>About Me</h3>
 <p>Coding, photography, roller coasters, kittens, dancing, car singing horribly.</p>
 
+<p>Recent Posts</p>
 <ul>
   {% for post in site.posts limit: 5 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+</ul>  
+<a href="{{ site.url }}">&nbsp;&nbsp;&nbsp;Ermagerd, rhed mer...</a>
+
+<br /><br /><br />    
+
+<p>Categories</p>
+<ul>  
+  {% for category in site.categories limit: 20 %}
+    <li><a href="{{ site.url }}/categories/{{ category[0] }}">{{ category[0] }}</a></li>
+  {% endfor %}  
+  
 </ul>

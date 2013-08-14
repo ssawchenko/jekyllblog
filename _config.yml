@@ -1,12 +1,11 @@
 name: "shayla"
 description: "testing jekyll"
-
 url: "http://localhost:4000"
 
 paginate: 10
-
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-permalink: date
+permalink: pretty
 pygments: true
+categories: [web, javascript, java]

@@ -2,6 +2,7 @@
 title: Day 1 - Sample Jekyll Blog
 layout: post
 permalink: /2013/08/11/Blog-Startup-With-Jekyll.html
+category: [java]
 ---
 
 Things I did to get this blog up and runnin'
