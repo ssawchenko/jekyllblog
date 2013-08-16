@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
 
+	<!--  google fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Euphoria Script" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+	
+	<!--  bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    
-    <link href="/css/common.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/bootstrap-custom.css" rel="stylesheet">
     
     <!-- Highlight.js -->
     <link rel="stylesheet" href="/css/highlight/zenburn.css">
@@ -33,20 +32,35 @@ ript>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="hero-unit">
+	  <h1>Shayla's Super Awesome Blog</h1>
+	  <p>(of fun!)</p>
+	  <p>
+	    <a class="btn btn-primary btn-large">
+	      Click it bitches!
+	    </a>
+	  </p>
+	</div>
+
+    <div class="navbar"> <!-- navbar-fixed-top -->
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".na\
-v-collapse">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">{{ site.name }}</a>
+          <!-- <a class="brand" href="#">{{ site.name }}</a> -->
           <div class="nav-collapse collapse">
+            
+            <!-- {% include nav_list.html %}  --> 
+            
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
+              <li id="nav_blog" class="active"><a href="/">Blog</a></li>
+              <li id="nav_resume"><a href="/about">Resume</a></li>
+              <li id="nav_rernderm"><a href="/">Rernderm</a></li>
             </ul>
+           
           </div>
         </div>
       </div>
