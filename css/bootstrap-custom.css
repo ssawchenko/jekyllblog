@@ -1,5 +1,14 @@
+/* Custom Styles */
+.post-preview {
+	border:1px solid #572100; 
+	margin-bottom:10px; 
+	padding: 20px;
+	background: #f2efe9;
+}
+
+/* Font overrides */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Euphoria Script', Georgia, Times, serif;
+    font-family: 'Maven Pro', Georgia, Times, serif;
 }
 p, div {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
@@ -15,7 +24,7 @@ body {
 }
 
 .nav li {
-	width: 150px;
+	width: 150px; /* Hard-coded width */
 	text-align: center;
 	font-size: 20px;
 }
@@ -24,6 +33,7 @@ body {
 	border-radius: 0px;
 }
 
+/* Different colours for each menu */
 #nav_blog > a{ color: #840D72; } 
 #nav_blog.active > a { background-color: #840D72 !important; color: white; }
 #nav_resume > a{ color: #DFD47A; } 
@@ -38,7 +48,7 @@ body {
 
 }
 
-/* 
-Rock Salt
-
-*/
+code,
+pre {
+	font-family: 'PT Mono', Monaco, Menlo, Consolas, "Courier New", monospace;
+}
