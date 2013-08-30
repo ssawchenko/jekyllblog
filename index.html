@@ -4,8 +4,9 @@ layout: default
 
 {% for post in site.posts limit: 10 %}
 <div class="row-fluid">
-  <div class="span12">
-    <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</h2>
+  <div class="span12 post-preview">
+    <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+    <h5>&lt; In {{ post.categories }} &gt;</h5>
     <h4>{{ post.date | date_to_long_string }}</h4>
     <p>{{ post.excerpt }}</p>
     <p>
