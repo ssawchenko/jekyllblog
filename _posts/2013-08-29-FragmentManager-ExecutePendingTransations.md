@@ -3,7 +3,6 @@ title: "I committed my fragment transaction, but onCreateView is not being calle
 layout: post
 categories:
 - android
-permalink: /blog/2013/08/29/FragmentManager-ExecutePendingTransactions.html
 ---
 
 In my application I have two fragments that are related. One fragment contains 'tabs' which when pressed will load content into the second fragment. 

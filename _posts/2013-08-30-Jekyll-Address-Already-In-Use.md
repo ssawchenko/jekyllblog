@@ -3,7 +3,6 @@ title: "TCPServer Error: Address already in use"
 layout: post
 categories:
 - jekyll
-permalink: /blog/2013/08/30/Jekyll-Address-Already-In-Use.html
 ---
 
 At some point in your Jekyll travels you may get your sever in a state such that the TCPServer connection remains in use, even after killing Jekyll. When attempting to kick Jekyll back into action, an error such as the following may be seen:
