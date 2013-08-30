@@ -7,14 +7,13 @@
     <meta name="description" content="{{ site.description }}">
 
 	<!--  google fonts -->
-	<link href="http://fonts.googleapis.com/css?family=Euphoria Script" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Cabin|PT+Mono|Maven+Pro:700' rel='stylesheet' type='text/css'>
 	
 	<!--  bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/bootstrap-custom.css" rel="stylesheet">
-    
+        
     <!-- Highlight.js -->
     <link rel="stylesheet" href="/css/highlight/zenburn.css">
 	<script src="/js/highlight.pack.js"></script>
@@ -56,14 +55,14 @@ ript>
             <!-- {% include nav_list.html %}  --> 
             
             <ul class="nav">
-              <li id="nav_blog" class="active"><a href="/">Blog</a></li>
-              <li id="nav_resume"><a href="/about">Resume</a></li>
-              <li id="nav_rernderm"><a href="/">Rernderm</a></li>
+              <li id="nav_blog" {% if include.menu == "blog" %}class="active"{% endif %}><a href="/">Blog</a></li>
+              <li id="nav_resume" {% if include.menu == "about" %}class="active"{% endif %}><a href="/about">Resume</a></li>
+              <li id="nav_rernderm" {% if include.menu == "other" %}class="active"{% endif %}><a href="/">Rernderm</a></li>
             </ul>
            
           </div>
         </div>
       </div>
     </div>
-
+    
     <div class="container">

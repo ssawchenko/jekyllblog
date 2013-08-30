@@ -1,9 +1,9 @@
-{% include header.html %}
+{% include header.html menu="blog" %}
 
 <div class="row-fluid">
-  <div class="span8">
+  <div class="span8 post-preview">
     <h1>{{ page.title }}</h1>
-    <p class="muted">{{ page.date | date_to_long_string }}</p>
+    <p>{{ page.date | date_to_long_string }}</p>
 
     {{ content }}
   </div>
