@@ -9,3 +9,4 @@ redcarpet:
 permalink: /:year/:month/:day/:title/
 pygments: true
 categories: [web, javascript, java, jekyll]
+excerpt_separator: "<!-- more -->"

@@ -1,5 +1,5 @@
 ---
-title: "I committed my fragment transaction, but onCreateView is not being called?"
+title: "Committed fragment transaction not being created"
 layout: post
 categories:
 - android
@@ -7,6 +7,8 @@ categories:
 
 In my application I have two fragments that are related. One fragment contains 'tabs' which when pressed will load content into the second fragment. 
 Originally, I had a chunk of code that loaded in the tab fragment, committed, and then attempted to call the loadView function (which is implemented in the SingleStatControlTabs fragment.
+
+<!-- more -->
 
 First attempt:
 
@@ -33,4 +35,5 @@ Calling executePendingTransactions from within an activity's `onCreate` method d
 
 ### References 
 http://stackoverflow.com/questions/10864708/oncreateview-isnt-called-immediately-after-fragmenttransaction-commit
+
 http://stackoverflow.com/questions/17229500/oncreateview-in-fragment-is-not-called-immediately-even-after-fragmentmanager/18521934#18521934

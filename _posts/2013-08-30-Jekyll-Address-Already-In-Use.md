@@ -13,6 +13,8 @@ error: Address already in use - bind(2). Use --trace to view backtrace
 ```
 To fix this you must determine the process ID associated with the TCP port Jekyll is using (by default 4000), kill it and then restart Jekyll.
 
+<!-- more -->
+
 ```bash
 $ lsof -wni tcp:4000
 COMMAND   PID       USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
