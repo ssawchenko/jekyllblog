@@ -1,8 +1,7 @@
 /* COLOUR PALETTE */
 /* Dark Brown: #572100 */
+/* Lighter Brown: #943900 */
 /* Light Beige: #f2efe9 */
-
-
 
 /* Custom Styles */
 .post-preview {
@@ -10,6 +9,21 @@
 	margin-bottom:10px; 
 	padding: 20px;
 	background: #f2efe9;
+	font-size: 1.25em;
+	line-height: 150%;
+}
+
+.post-preview li {
+	line-height: 150%;
+}
+
+.footer {
+	background: #572100;
+	margin-top: 20px;
+	color:white;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
 }
 
 /* Font overrides */
@@ -22,17 +36,25 @@ p, div {
 
 body {
   	padding-top: 0px; /* 60px */
+  	color: #572100;
+	background-color: #e4dfd3;
 }
 
 /* Bootstrap overriding */
-.hero-unit {
+.jumbotron {
 	margin-bottom: 0px;
 }
 
-.nav li {
-	width: 150px; /* Hard-coded width */
+.navbar-nav li {
+	width: auto;
 	text-align: center;
 	font-size: 20px;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav li {
+		width: 150px; /* Hard-coded width */
+	}
 }
 
 .navbar-inner {
@@ -40,7 +62,7 @@ body {
 }
 
 a {
-  color: #572100;
+  color: #943900;
   text-decoration: none;
 }
 a:hover,
@@ -50,19 +72,17 @@ a:focus {
 }
 
 /* Different colours for each menu */
+.navbar {
+	background:#572100;	
+}
+
+
 #nav_blog > a{ color: #840D72; } 
 #nav_blog.active > a { background-color: #840D72 !important; color: white; }
 #nav_resume > a{ color: #DFD47A; } 
 #nav_resume.active > a {background-color: #DFD47A !important; color: white; }
 #nav_rernderm > a{  color: #177C9E; } 
 #nav_rernderm.active > a { background-color: #177C9E !important; color: white; }
-
-.nav li#nav_rernderm {
-
-}
-.nav li#nav_rernderm .active {
-
-}
 
 code,
 pre {

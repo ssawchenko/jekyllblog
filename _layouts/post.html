@@ -1,13 +1,13 @@
 {% include header.html menu="blog" %}
 
-<div class="row-fluid">
-  <div class="span8 post-preview">
+<div class="row">
+  <div class="col-md-8 post-preview">
     <h4>{{ page.date | date_to_long_string }} {<span class="categories">Filed under {{ page.categories | category_links }}</span>}</h4>
     <h2>{{ page.title }}</h2>
 
     {{ content }}
   </div>
-  <div class="span4">
+  <div class="col-md-4">
     {% include sidebar.html %}
   </div>
 </div>
