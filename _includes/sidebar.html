@@ -4,14 +4,14 @@
     <li><a href="{{ post.url }}">{{ post.date | date_to_html_string }}: {{ post.title }}</a></li>
   {% endfor %}
 </ul>  
-<a href="{{ site.url }}">&nbsp;&nbsp;&nbsp;Ermagerd, rhed mer...</a>
-
-<br /><br /><br />    
-
+<a href="{{ site.url }}">&nbsp;&nbsp;&nbsp;Ermagerd, rhed mer...</a>  
 <h4>Categories</h4>
 <ul>  
   {% for category in site.categories limit: 20 %}
     <li><a href="{{ site.url }}/categories/{{ category[0] }}">{{ category[0] }}</a></li>
   {% endfor %}  
-  
+</ul>
+<h4>Tools</h4>
+<ul>
+  <li><a href="http://hslpicker.com/#943900">Colour Picker</a></li>
 </ul>
