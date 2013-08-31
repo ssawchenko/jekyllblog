@@ -1,3 +1,9 @@
+/* COLOUR PALETTE */
+/* Dark Brown: #572100 */
+/* Light Beige: #f2efe9 */
+
+
+
 /* Custom Styles */
 .post-preview {
 	border:1px solid #572100; 
@@ -31,6 +37,16 @@ body {
 
 .navbar-inner {
 	border-radius: 0px;
+}
+
+a {
+  color: #572100;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #572100;
+  text-decoration: underline;
 }
 
 /* Different colours for each menu */
