@@ -22,10 +22,19 @@
 	<![endif]-->
 </head>
 
+{% case include.menu %} 
+  {% when 'about' %} 
+    {% assign color = 'yellow' %}
+  {% else %} 
+    {% assign color = 'pink' %}
+{% endcase %} 
+
 <body>
+	<div class="top_color {{color}}">
+	</div>
+
 	<div class="jumbotron">
-		<h1>Shayla's Super Awesome Blog</h1>
-		<p>(of fun!)</p>
+		<h1>Shayla's Super Awesome Blog</h1><p style="float:right">(of fun)</p>
 	</div>
 	
 	<div class="navbar-with-monsters">

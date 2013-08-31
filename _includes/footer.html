@@ -1,8 +1,17 @@
-    	
-    
     	</div> <!-- End of container div from header -->
+    	
+    	<!-- Bottom monster -->
+   		<div class="monster_bottom">
+   		{% case include.menu %} 
+		  {% when 'blog' %} 
+		    <img src="/img/monster_bottom_pink.png "/>
+		  {% when 'about' %} 
+		    <img src="/img/monster_bottom_yellow.png "/>
+		  {% else %} 
+		{% endcase %} 
+   		</div>
     </div>  <!-- background mask -->
-    
+
     <div class="footer">
     	<div>Generated with love using <a href="http://jekyllrb.com/">Jekyll</a></div>
     	<div>Shayla Sawchenko 2013</div>

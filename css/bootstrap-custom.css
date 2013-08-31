@@ -26,6 +26,7 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
+	margin-top: 0px;
 }
 
 .background-mask {
@@ -35,7 +36,18 @@
 	position: relative;
 	z-index: 1000;
 	padding: 20px;
-	
+}
+
+.top_color {
+	height: 10px;
+}
+
+.pink {
+	background: #840D72; 
+}
+
+.yellow {
+	background: #DFD47A; 	
 }
 
 /**** Font overrides ****/
@@ -57,12 +69,7 @@ body {
 p {
 	margin-bottom: 30px;
 }
-
-/**** Bootstrap object overriding ****/
-.jumbotron {
-	margin-bottom: 0px;
-}
-
+/*** Monsters ****/
 .navbar-with-monsters {
 	position: relative;
 }
@@ -102,19 +109,36 @@ p {
 	
 	.navbar-monsters .animate_monster_down {
 		transition-property: top;
-  		transition-duration: 0.5s;
+  		transition-duration: 0.25s;
   		transition-timing-function: ease-out;
   		top: 0px;
 	}
 	
 	.navbar-monsters .animate_monster_up {
 	 	transition-property: top;
-  		transition-duration: 0.5s;
+  		transition-duration: 0.25s;
   		transition-timing-function: ease-out;
   		top: -100px;
 	}
 }
+
+.monster_bottom {
+	position: absolute;
+	bottom: -50px;
+	right: 25px;
+}
+
+.monster_bottom img {
+	width: 100px;
+}
  
+/**** Bootstrap object overriding ****/
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 100px;
+	margin-bottom: 0px;
+}
+
 .navbar-nav li {
 	width: auto;
 	text-align: center;
