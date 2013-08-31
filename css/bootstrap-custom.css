@@ -1,16 +1,18 @@
 /* COLOUR PALETTE */
+/** FONTS **/
 /* Dark Brown: #572100 */
 /* Lighter Brown: #943900 */
-/* Light Beige: #f2efe9 */
+/** Background **/
+/* Main: #e4dfd3
+/* Lighter: #f2efe9 */
 
-/* Custom Styles */
+/**** Custom Styles ****/
 .post-preview {
 	border:1px solid #572100; 
 	margin-bottom:10px; 
 	padding: 20px;
 	background: #f2efe9;
 	font-size: 1.25em;
-	line-height: 150%;
 }
 
 .post-preview li {
@@ -26,7 +28,17 @@
 	text-align: center;
 }
 
-/* Font overrides */
+.background-mask {
+	width: 100%;
+	height: 100%;
+	background: #e4dfd3;
+	position: relative;
+	z-index: 1000;
+	padding: 20px;
+	
+}
+
+/**** Font overrides ****/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Maven Pro', Georgia, Times, serif;
 }
@@ -34,21 +46,66 @@ p, div {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
 
+/**** General overrides ****/
 body {
   	padding-top: 0px; /* 60px */
   	color: #572100;
 	background-color: #e4dfd3;
 }
 
-/* Bootstrap overriding */
+.container div,
+p {
+	margin-bottom: 30px;
+}
+
+/**** Bootstrap object overriding ****/
 .jumbotron {
 	margin-bottom: 0px;
+}
+
+.navbar-with-monsters {
+	position: relative;
+}
+
+.navbar-monsters {
+	position: absolute;
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.navbar-monsters {
+		position: absolute;
+		display: inline-block;
+		top: 0px;
+		left: 15px;
+	}
+	
+	.navbar-monsters div {
+		width: 150px;
+		border: 1px solid black;
+		float: left;
+	}
+	
+	.navbar-monsters img {
+		position: relative;
+		z-index: 1000;
+		top: 0px;
+		width: 75px;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto; 
+	}
+	
+	.navbar-monsters .show_monster {
+		top: -100px;
+	}
 }
 
 .navbar-nav li {
 	width: auto;
 	text-align: center;
 	font-size: 20px;
+	background: #572100;
 }
 
 @media (min-width: 768px) {
@@ -57,6 +114,21 @@ body {
 	}
 }
 
+.navbar {
+	background:#572100;	
+	margin-bottom: 0px;
+	border: none;
+}
+
+/* Each menu different colour */
+#nav_blog > a{ color: #840D72; } 
+#nav_blog.active > a { background-color: #840D72 !important; color: white; }
+#nav_resume > a{ color: #DFD47A; } 
+#nav_resume.active > a {background-color: #DFD47A !important; color: white; }
+#nav_rernderm > a{  color: #177C9E; } 
+#nav_rernderm.active > a { background-color: #177C9E !important; color: white; }
+
+/**** Link overrides ****/
 a {
   color: #943900;
   text-decoration: none;
@@ -67,19 +139,10 @@ a:focus {
   text-decoration: underline;
 }
 
-/* Different colours for each menu */
-.navbar {
-	background:#572100;	
-}
-
-#nav_blog > a{ color: #840D72; } 
-#nav_blog.active > a { background-color: #840D72 !important; color: white; }
-#nav_resume > a{ color: #DFD47A; } 
-#nav_resume.active > a {background-color: #DFD47A !important; color: white; }
-#nav_rernderm > a{  color: #177C9E; } 
-#nav_rernderm.active > a { background-color: #177C9E !important; color: white; }
-
+/**** Code formatting ****/
 code,
 pre {
+	padding: 0px;
 	font-family: 'PT Mono', Monaco, Menlo, Consolas, "Courier New", monospace;
 }
+
