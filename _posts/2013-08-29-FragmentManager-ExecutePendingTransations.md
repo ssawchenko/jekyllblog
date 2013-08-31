@@ -5,12 +5,13 @@ categories:
 - android
 ---
 
-In my application I have two fragments that are related. One fragment contains 'tabs' which when pressed will load content into the second fragment. 
-Originally, I had a chunk of code that loaded in the tab fragment, committed, and then attempted to call the loadView function (which is implemented in the SingleStatControlTabs fragment.
+In my Android application I have two fragments that are related to each other; one fragment contains 'tabs' which when pressed will load content into the second fragment. 
+Originally, I had a piece of code that (1) loaded in the tab fragment, (2) committed the fragment transaction, and then (3) attempted to call a method implemented in the newly loaded fragment.
 
 <!-- more -->
 
-First attempt:
+
+**First attempt:**
 
 ```java
 tabFragment = new SingleStatControlTabs();
@@ -18,9 +19,11 @@ ft.replace(R.id.fragment_switcher, tabFragment);
 ft.commit();
 tabFragment.loadView(SingleStatControlTabs.DEFAULT_TAB); // Nope! Null pointer exception found here...
 ```
-This code looked fine, but my loadView was tossing me a null pointer exception. When I debugged it, the tab's onCreateView method was not being called, so some variables I depended on were not being set. But I had committed, so what was going on? Thankfully StackOverflow once again saved the day. It turns out that calling commit does not actually force the update. To force the update manually we can call `FragmentManager.executePendingTransactions();`.
 
-Second, now working attempt:
+This code looked fine, but my loadView method was tossing me a null pointer exception. When I looked into it, the newly loaded fragment's onCreateView method was not being called after calling the commit function (this meant that some variables I depended on were null). But I had committed, so what was going on? Thankfully StackOverflow once again saved the day. It turns out that calling commit does not actually force the fragment to update immediately. To force the update manually we can call `FragmentManager.executePendingTransactions();`.
+
+
+**Second (now working) attempt:**
 
 ```java
 tabFragment = new SingleStatControlTabs();

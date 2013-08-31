@@ -11,6 +11,7 @@ At some point in your Jekyll travels you may get your sever in a state such that
 [2013-08-30 11:58:44] WARN  TCPServer Error: Address already in use - bind(2)
 error: Address already in use - bind(2). Use --trace to view backtrace
 ```
+
 To fix this you must determine the process ID associated with the TCP port Jekyll is using (by default 4000), kill it and then restart Jekyll.
 
 <!-- more -->
@@ -23,6 +24,8 @@ ruby    43631      <user>  13u  IPv4 0x3453ebb5e10f92c9      0t0  TCP *:terabase
 $ kill -9 43631
 $ jekyll --watch serve
 ```
+
+
 ### References 
 http://stackoverflow.com/questions/10261477/tcpserver-error-address-already-in-use-bind2
 
