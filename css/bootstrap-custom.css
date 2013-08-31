@@ -57,10 +57,6 @@ body {
 	}
 }
 
-.navbar-inner {
-	border-radius: 0px;
-}
-
 a {
   color: #943900;
   text-decoration: none;
@@ -75,7 +71,6 @@ a:focus {
 .navbar {
 	background:#572100;	
 }
-
 
 #nav_blog > a{ color: #840D72; } 
 #nav_blog.active > a { background-color: #840D72 !important; color: white; }
