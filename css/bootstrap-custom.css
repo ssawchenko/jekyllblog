@@ -99,8 +99,22 @@ p {
 	.navbar-monsters .show_monster {
 		top: -100px;
 	}
+	
+	.navbar-monsters .animate_monster_down {
+		transition-property: top;
+  		transition-duration: 0.5s;
+  		transition-timing-function: ease-out;
+  		top: 0px;
+	}
+	
+	.navbar-monsters .animate_monster_up {
+	 	transition-property: top;
+  		transition-duration: 0.5s;
+  		transition-timing-function: ease-out;
+  		top: -100px;
+	}
 }
-
+ 
 .navbar-nav li {
 	width: auto;
 	text-align: center;

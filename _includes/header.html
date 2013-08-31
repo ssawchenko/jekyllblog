@@ -31,9 +31,9 @@
 	<div class="navbar-with-monsters">
 	  	<!-- Monsters! -->
 	  	<div class="navbar-monsters">
-			<div><img src="/img/monster_pink.png" {% if include.menu == "blog" %}class="show_monster"{% endif %} /></div>
-			<div><img src="/img/monster_yellow.png"  {% if include.menu == "about" %}class="show_monster"{% endif %} /></div>
-			<div><img src="/img/monster_pink.png"  {% if include.menu == "other" %}class="show_monster"{% endif %} /></div>
+			<div><img id="monster_nav_blog" src="/img/monster_pink.png" {% if include.menu == "blog" %}class="show_monster"{% endif %}/></div>
+			<div><img id="monster_nav_resume" src="/img/monster_yellow.png"  {% if include.menu == "about" %}class="show_monster"{% endif %} /></div>
+			<div><img id="monster_nav_rernderm" src="/img/monster_pink.png"  {% if include.menu == "other" %}class="show_monster"{% endif %} /></div>
 		</div>
 		
 		<!-- Navbar -->
@@ -48,9 +48,9 @@
 			
 			<div class="navbar-collapse collapse" style="height: 1px;">
 				<ul class="nav navbar-nav">
-					<li id="nav_blog" {% if include.menu == "blog" %}class="active"{% endif %}><a href="/">Blog</a></li>
-					<li id="nav_resume" {% if include.menu == "about" %}class="active"{% endif %}><a href="/about">Me</a></li>
-					<li id="nav_rernderm" {% if include.menu == "other" %}class="active"{% endif %}><a href="/">Rernderm</a></li>
+					<li id="nav_blog" class="monster_trigger {% if include.menu == "blog" %}active{% endif %}"><a href="/">Blog</a></li>
+					<li id="nav_resume" class="monster_trigger {% if include.menu == "about" %}active{% endif %}"><a href="/about">Me</a></li>
+					<li id="nav_rernderm" class="{% if include.menu == "other" %}active{% endif %}"><a href="/">Rernderm</a></li>
 				</ul>
 			</div>
 		</div>
