@@ -3,7 +3,6 @@ title: How I setup my Jekyll Blog
 layout: post
 categories:
 - jekyll
-- web
 ---
 A few years back I had a Wordpress blog, and while it made it easy to setup and post, it required a lot of maintenance, was harder to control specific page formats, and was really bloated for what I needed. After a little research, I decided to go with Jekyll as a blogging platform. It is a ruby application that generates a static web site, but it is flexible enough to allow for a lot of customization. 
 

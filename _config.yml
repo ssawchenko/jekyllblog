@@ -6,7 +6,7 @@ paginate: 10
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:categories/:year/:month/:day/:title/
 pygments: true
 categories: [web, javascript, java, jekyll]
 excerpt_separator: "<!-- more -->"
