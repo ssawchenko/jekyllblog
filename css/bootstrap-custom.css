@@ -158,13 +158,16 @@ p {
 	border: none;
 }
 
+    
+    
+
 /* Each menu different colour */
-#nav_blog > a{ color: #840D72; } 
-#nav_blog.active > a { background-color: #840D72 !important; color: white; }
-#nav_resume > a{ color: #DFD47A; } 
-#nav_resume.active > a {background-color: #DFD47A !important; color: white; }
-#nav_rernderm > a{  color: #177C9E; } 
-#nav_rernderm.active > a { background-color: #177C9E !important; color: white; }
+#nav_blog > a{ color: #fff; } 
+#nav_blog.active > a { background-color: #840D72 !important; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+#nav_resume > a{ color: #fff; } 
+#nav_resume.active > a {background-color: #DFD47A !important; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+#nav_rernderm > a{  color: #fff; } 
+#nav_rernderm.active > a { background-color: #177C9E !important; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 /**** Link overrides ****/
 a {
