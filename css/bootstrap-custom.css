@@ -50,6 +50,28 @@
 	background: #DFD47A; 	
 }
 
+.three_d_text {
+	text-shadow: 
+		0 1px 0 #ccc,
+	    0 2px 0 #c9c9c9,
+	    0 3px 0 #bbb,
+	    0 4px 0 #b9b9b9,
+	    0 5px 0 #aaa,
+	    0 6px 1px rgba(0,0,0,.1),
+	    0 0 5px rgba(0,0,0,.1),
+	    0 1px 3px rgba(0,0,0,.3),
+	    0 3px 5px rgba(0,0,0,.2),
+	    0 5px 10px rgba(0,0,0,.25),
+	    0 10px 10px rgba(0,0,0,.2),
+	    0 20px 20px rgba(0,0,0,.15);
+}
+
+.inset {
+	text-shadow: 
+		0px -2px 0px #333,
+    	0px 2px 3px #666;
+}
+
 /**** Font overrides ****/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Maven Pro', Georgia, Times, serif;
@@ -137,6 +159,11 @@ p {
 	padding-top: 10px;
 	padding-bottom: 100px;
 	margin-bottom: 0px;
+	background-image: url("/img/jumbotron_background.png");
+	background-repeat: repeat;
+	
+	outline: 2px dashed #572100;
+    outline-offset: -5px;
 }
 
 .navbar-nav li {
@@ -157,9 +184,6 @@ p {
 	margin-bottom: 0px;
 	border: none;
 }
-
-    
-    
 
 /* Each menu different colour */
 #nav_blog > a{ color: #fff; } 
