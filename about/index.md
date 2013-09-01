@@ -3,6 +3,6 @@ title: About Me
 layout: about
 ---
 
-# About Me
+# Who am I?
 
-Coding, photography, roller coasters, kittens, dancing, car singing horribly.
+Contact: shayla.sawchenko@gmail.com
