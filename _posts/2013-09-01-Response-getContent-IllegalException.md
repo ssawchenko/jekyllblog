@@ -18,7 +18,7 @@ Turns out this is a bad idea!
 <b>Watch:</b> Never call getContent() from your watch/expression window! Always write to a variable and watch the variable.
 </div>
 
-Calling ```.getContent()``` in the watch window causing the content to be consumed **in the watch window**, thus causing the above exception to be thrown when the application attempts to retrieve it. 
+Calling ```.getContent()``` in the watch window causes the content to be consumed **in the watch window**, thus causing the above exception to be thrown when the application attempts to retrieve it. 
  
 ### References
 http://stackoverflow.com/questions/16104884/illegalstateexception-content-has-been-consumed-on-first-getcontent

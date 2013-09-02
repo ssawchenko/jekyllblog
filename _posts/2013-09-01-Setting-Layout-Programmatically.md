@@ -74,7 +74,7 @@ A few things to note:
 1. Make sure to cast the weighted value to a float (1f).
 
 <div class="alert alert-info">
-<b>Watch:</b> Any class that extends LinearLayout may have their children use weighted. When setting in code, be sure to use the extended parent class, not LinearLayout. Failing to do so will cause extremely confusing run time errors (I know from experience!)
+<b>Watch:</b> Any class that extends LinearLayout may have weighted children. When setting in code, be sure to use the extended parent class, not LinearLayout. Failing to do so will cause extremely confusing run time errors (I know from experience!)
 </div>
 
 For example, if you have a RadioGroup and you are setting your RadioButton weight use:
