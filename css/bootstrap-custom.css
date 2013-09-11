@@ -72,6 +72,10 @@
     	0px 2px 3px #666;
 }
 
+.container img {
+	border: 1px solid #572100;
+}
+
 /**** Font overrides ****/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Maven Pro', Georgia, Times, serif;
@@ -141,7 +145,21 @@ p {
   		transition-duration: 0.25s;
   		transition-timing-function: ease-out;
   		top: -100px;
-	}
+	}	
+}
+
+.twitter_monster {
+	position: absolute;
+	bottom: 0px;
+ 	right: 0px;
+}
+
+.twitter_monster img {
+	height: 75px;
+}
+
+.twitter_monster img {
+	height: 75px;
 }
 
 .monster_bottom {
@@ -211,3 +229,16 @@ pre {
 	font-family: 'PT Mono', Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+.twitter-timeline {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.twitter-widget {
+	 height: 300px;
+	 background:#f2efe9;
+	 border-radius: 2px;
+	 border: 1px solid #572100;
+}
