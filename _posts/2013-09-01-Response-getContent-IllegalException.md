@@ -3,6 +3,10 @@ title: "response.getEntity().getContent() throwing IllegalStateException?"
 layout: post
 categories:
 - android
+tags
+- java
+- httpresponse
+- exception
 ---
 
 While debugging my HttpResponse object in my Android application I kept coming across an the error:

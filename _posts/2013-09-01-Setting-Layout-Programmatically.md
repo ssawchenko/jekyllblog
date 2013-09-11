@@ -3,6 +3,10 @@ title: "Setting Layout Weight Programmatically"
 layout: post
 categories:
 - android
+tags:
+- java
+- ui
+- layout
 ---
 
 ### What is layout_weight?
