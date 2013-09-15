@@ -95,6 +95,10 @@ p, div {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
 
+h1 {
+	font-size: 34px; /* h1 font type is large, use slightly smaller px than default */
+}
+
 h1.title {
 	font-family: 'Patrick Hand SC', 'Amatic SC', 'Rock Salt', 'Maven Pro', Georgia, Times, serif;
 }
@@ -216,8 +220,8 @@ body {
 	background-image: url("/img/jumbotron_background.png");
 	background-repeat: repeat;
 	
-	outline: 2px dashed #572100;
-    outline-offset: -5px;
+	/*outline: 2px dashed #572100;*/
+    /*outline-offset: -5px;*/
 }
 
 .navbar-nav li {
@@ -225,6 +229,7 @@ body {
 	text-align: center;
 	font-size: 20px;
 	background: #572100;
+	font-family: 'Maven Pro', Georgia, Times, serif;
 }
 
 @media (min-width: 768px) {
@@ -237,6 +242,7 @@ body {
 	background:#572100;	
 	margin-bottom: 0px;
 	border: none;
+    border-radius: 0px;
 }
 
 /* Each menu different colour */
