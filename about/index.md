@@ -6,6 +6,8 @@ layout: about
 # Who am I?
 Thanks for asking! I am a software developer located in Vancouver, BC. I love making applications that people WANT to use. After graduating from Simon Fraser University I began my journey into web development and have since moved into mobile application development, which is my current focus. In my free time I love to play games with friends and take pictures of things.
 
+I decided to start this blog to document issues that I have bumped into on my development travels in hopes that the solutions may help others having similar troubles.
+
 
 ![My magic](/img/me.jpg "My magic")
 
