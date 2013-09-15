@@ -89,18 +89,20 @@ h4 {
 
 /**** Font overrides ****/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Maven Pro', Georgia, Times, serif;
+    font-family: 'Oswald', Georgia, Times, serif;
+    font-weight: 700;
 }
 p, div {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
 
 h1 {
-	font-size: 34px; /* h1 font type is large, use slightly smaller px than default */
+	font-size: 36px; /* h1 font type is large, use slightly smaller px than default */
 }
 
 h1.title {
-	font-family: 'Patrick Hand SC', 'Amatic SC', 'Rock Salt', 'Maven Pro', Georgia, Times, serif;
+	font-family: 'Oswald', Georgia, Times, serif;
+	font-weight: 700;
 }
 
 /**** General overrides ****/
@@ -229,7 +231,8 @@ body {
 	text-align: center;
 	font-size: 20px;
 	background: #572100;
-	font-family: 'Maven Pro', Georgia, Times, serif;
+	font-family: 'Oswald', Georgia, Times, serif;
+	font-weight: 700;
 }
 
 @media (min-width: 768px) {
