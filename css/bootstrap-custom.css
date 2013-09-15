@@ -76,12 +76,27 @@
 	border: 1px solid #572100;
 }
 
+#social_media {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+}
+
+h4 {
+	padding-top: 15px;
+}
+
 /**** Font overrides ****/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Maven Pro', Georgia, Times, serif;
 }
 p, div {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+h1.title {
+	font-family: 'Rock Salt', 'Maven Pro', Georgia, Times, serif;
 }
 
 /**** General overrides ****/
@@ -91,10 +106,6 @@ body {
 	background-color: #e4dfd3;
 }
 
-.container div,
-p {
-	margin-bottom: 30px;
-}
 /*** Monsters ****/
 .navbar-with-monsters {
 	position: relative;
@@ -102,6 +113,10 @@ p {
 
 .navbar-monsters {
 	position: absolute;
+	display: none;
+}
+
+#social_media_monster {
 	display: none;
 }
 
@@ -146,6 +161,27 @@ p {
   		transition-timing-function: ease-out;
   		top: -100px;
 	}	
+	
+	#social_media_monster {
+		display:inline-block;
+		position: absolute;
+		right: 25px;
+		top: -55px;
+	}
+	
+	#social_media_monster.animate_monster_down {
+		transition-property: top;
+  		transition-duration: 0.25s;
+  		transition-timing-function: ease-out;
+  		top: -10px;
+	}
+	
+	#social_media_monster.animate_monster_up {
+	 	transition-property: top;
+  		transition-duration: 0.25s;
+  		transition-timing-function: ease-out;
+  		top: -55px;
+	}
 }
 
 .twitter_monster {
@@ -225,8 +261,15 @@ a:focus {
 /**** Code formatting ****/
 code,
 pre {
-	padding: 0px;
+	/*padding-bottom: 10px;*/
+	/*margin: 0px 0px 0px 10px;*/
 	font-family: 'PT Mono', Monaco, Menlo, Consolas, "Courier New", monospace;
+	background-color: transparent;
+	border: none;
+}
+
+ul code {
+	margin: 0px 0px 0px 50px;	
 }
 
 .twitter-timeline {
