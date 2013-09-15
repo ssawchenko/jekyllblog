@@ -96,7 +96,7 @@ p, div {
 }
 
 h1.title {
-	font-family: 'Rock Salt', 'Maven Pro', Georgia, Times, serif;
+	font-family: 'Patrick Hand SC', 'Amatic SC', 'Rock Salt', 'Maven Pro', Georgia, Times, serif;
 }
 
 /**** General overrides ****/
@@ -262,14 +262,10 @@ a:focus {
 code,
 pre {
 	/*padding-bottom: 10px;*/
-	/*margin: 0px 0px 0px 10px;*/
+	/*margin-left: 15px;*/
 	font-family: 'PT Mono', Monaco, Menlo, Consolas, "Courier New", monospace;
 	background-color: transparent;
 	border: none;
-}
-
-ul code {
-	margin: 0px 0px 0px 50px;	
 }
 
 .twitter-timeline {
