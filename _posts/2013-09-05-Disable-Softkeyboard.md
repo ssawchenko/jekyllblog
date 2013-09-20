@@ -13,6 +13,8 @@ tags:
 When an input is given focus, the default behaviour is for the soft keyboard to pop up.
 In the example below, `listFilterText` is getting default focus (as it is the 'first' input in the layout) and forcing the soft keyboard to pop up.
 
+<!-- more -->
+
 ```java
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,7 +42,8 @@ In the example below, `listFilterText` is getting default focus (as it is the 'f
 ```
 
 ### One solution
-The most strightfoward solution I have found is to manually give focus to a non-input object. We do this by 
+The most strightfoward solution I have found is to manually give focus to a non-input object. We do this by: 
+
 1. Enabling focus on the desired object via `android:focusable` and `android:focusableInTouchMode="true"`
 1. Requesting focus on the desired object with `<requestFocus />`
 

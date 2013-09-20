@@ -22,7 +22,7 @@ Main my focus in this post is to sum up some of the suggestions made which will 
 **Disclaimer:** The items I list below may only provide a miniscule performance increase (given the situation in which they are used), but there is no harm in keeping these in mind as best practices. Also, the focus of the talks were regarding JavaScript code performance, and does not cover more general performance issues such as deferred or async script loading. The suggestions are not restricted to mobile usage, however, the performance gains may be greater on the mobile stage.
 
 #### Web workers
-JavaScript runs on the UI thread, unless you use Web Workers. According to the articles, Web Workers give you a lot of control - each web worker gets its own script context and heap, thus its own garbage collector. So if you allocate a lot of objects on a background thread, then only pass small output data to the UI thread, you can help minimize the impact of garbage collection on your UI thread. 
+JavaScript runs on the UI thread, unless you use HTML5 Web Workers. According to the articles, Web Workers give you a lot of control - each web worker gets its own script context and heap, thus its own garbage collector. So if you allocate a lot of objects on a background thread, then only pass small output data to the UI thread, you can help minimize the impact of garbage collection on your UI thread. 
 
 I actually know very little (approaching zero) on web workers, but I have now added them to my mental "to-do-research" list. I'll hopefully write a little something up with my findings.
 
@@ -57,16 +57,25 @@ Again I learned something new - I haven't seen this used before; add one more it
 For smaller arrays these concepts may not be as important, but if your application does heavy computing over large arrays, keep these tips in mind.
 
 *  Pre-allocate arrays when you can; this avoids reallocation of memory with each addition to the array.
-  *  `var a = new Array(1000);` 
+
+    ```javascript
+var a = new Array(1000);
+``` 
 * Cache array lengths to avoid excessive property access:
-  * `for (int i=0; len=myArr.length; i < len; i++) { .. }`
   * There is a lot of [debate](http://stackoverflow.com/questions/6261953/do-modern-javascript-jiters-need-array-length-caching-in-loops) as to whether this actually increases performance, however, according [these](http://jsperf.com/caching-array-length/15) [tests] (http://www.erichynds.com/blog/javascript-length-property-is-a-stored-value) while modern browsers do not benefit to the same degree as older browsers (< IE9) gains can be seen on cases with large array iterations. 
+    
+    ```javascript 
+for (int i=0; len=myArr.length; i < len; i++) { .. }
+```
 * Use typed arrays when possible; according to Gaurav, this avoids integer tagging and float heap space allocations.
-  * `var a = new Float64Array(100);`
-  * `var a = new Int32Array(100);`  
+
+    ```javascript 
+var a = new Float64Array(100);
+var a = new Int32Array(100);
+```
 * Limit DOM queries; cache DOM elements to prevent multiple lookups.
 
-```javascript
+    ```javascript
 // Simple case, but you get the idea.
 var elStyle = document.getElementById("elID").style;
 elStyle.color = "#ff0000";
@@ -74,7 +83,7 @@ elStyle.background = "#00ff00";
 ```
 * Explicitly convert DOM values if possible (use `parseInt` for example); they are strings by default and explicit casting means that the values will not be converted to a string first. 
 
-```html
+    ```html
 <input type="text" id="lastValue" value="22" />
 <script>
 var i = parseInt(document.getElementById("lastValue").value);

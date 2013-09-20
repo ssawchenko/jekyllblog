@@ -3,7 +3,7 @@ title: "response.getEntity().getContent() throwing IllegalStateException?"
 layout: post
 categories:
 - android
-tags
+tags:
 - java
 - httpresponse
 - exception
