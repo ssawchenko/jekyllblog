@@ -16,4 +16,12 @@ $(function() {
 		});	
 	});
 	
+	$("#social_media")
+	.mouseover(function() {
+		$("#social_media_monster").removeClass("animate_monster_up").addClass("animate_monster_down");
+	})
+	.mouseout(function() {
+		$("#social_media_monster").removeClass("animate_monster_down").addClass("animate_monster_up");
+	});	
+	
 });
