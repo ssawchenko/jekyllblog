@@ -8,8 +8,7 @@ Thanks for asking! I am a software developer located in Vancouver, BC. I love ma
 
 I decided to start this blog to document issues that I have bumped into on my development travels in hopes that the solutions may help others having similar troubles.
 
-
-![My magic](/img/me.jpg "My magic")
+<img class="img-responsive" src="/img/me.jpg" width="500" height="358">
 
 # Want to get in touch?
 [email](mailto:shayla.sawchenko@gmail.com) - [twitter](https://twitter.com/shaylasawchenko) - [LinkedIn](http://www.linkedin.com/profile/view?id=6945811) - [Flickr](http://www.flickr.com/photos/38283645@N06/) 
