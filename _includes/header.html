@@ -1,3 +1,9 @@
+{% case include.menu %} 
+  {% when 'about' %} 
+    {% assign color = 'yellow' %}
+  {% else %} 
+    {% assign color = 'pink' %}
+{% endcase %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +26,9 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	
+	{% include analytics.html %}
 </head>
-
-{% case include.menu %} 
-  {% when 'about' %} 
-    {% assign color = 'yellow' %}
-  {% else %} 
-    {% assign color = 'pink' %}
-{% endcase %} 
 
 <body>
 	<div class="top_color {{color}}">
