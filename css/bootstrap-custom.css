@@ -1,7 +1,9 @@
 /* COLOUR PALETTE */
+
 /** FONTS **/
 /* Dark Brown: #572100 */
 /* Lighter Brown: #943900 */
+
 /** Background **/
 /* Main: #e4dfd3
 /* Lighter: #f2efe9 */
@@ -12,7 +14,7 @@
 	margin-bottom:10px; 
 	padding: 20px;
 	background: #f2efe9;
-	font-size: 1.25em;
+	/*font-size: 1.25em;*/
 }
 
 .post-preview li {
@@ -50,22 +52,6 @@
 	background: #DFD47A; 	
 }
 
-.three_d_text {
-	text-shadow: 
-		0 1px 0 #ccc,
-	    0 2px 0 #c9c9c9,
-	    0 3px 0 #bbb,
-	    0 4px 0 #b9b9b9,
-	    0 5px 0 #aaa,
-	    0 6px 1px rgba(0,0,0,.1),
-	    0 0 5px rgba(0,0,0,.1),
-	    0 1px 3px rgba(0,0,0,.3),
-	    0 3px 5px rgba(0,0,0,.2),
-	    0 5px 10px rgba(0,0,0,.25),
-	    0 10px 10px rgba(0,0,0,.2),
-	    0 20px 20px rgba(0,0,0,.15);
-}
-
 .inset {
 	text-shadow: 
 		0px -2px 0px #333,
@@ -81,6 +67,10 @@
 	right: 10px;
 	bottom: 10px;
 	cursor: pointer;
+}
+
+p {
+	font-size: 1.25em;	
 }
 
 h4 {
@@ -103,6 +93,16 @@ h1 {
 h1.title {
 	font-family: 'Oswald', Georgia, Times, serif;
 	font-weight: 700;
+}
+
+/**** Jumbotron overrrides ****/
+.jumbotron h1 {
+	font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 63px;
+  }
 }
 
 /**** General overrides ****/
@@ -211,7 +211,13 @@ body {
 }
 
 .monster_bottom img {
-	width: 100px;
+	width: 50px;
+}
+
+@media (min-width: 768px) {
+	.monster_bottom img {
+		width: 100px;
+	}
 }
  
 /**** Bootstrap object overriding ****/
