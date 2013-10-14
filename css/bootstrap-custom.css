@@ -70,11 +70,27 @@
 }
 
 p {
-	font-size: 1.25em;	
+	font-size: 1.0em;	
+}
+@media screen and (min-width: 768px) {
+	p {
+		font-size: 1.25em;	
+	}
 }
 
 h4 {
 	padding-top: 15px;
+}
+
+blockquote p {
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 1.00em;
+}
+@media screen and (min-width: 768px) {
+	blockquote p {
+	  font-size: 1.25em;
+	}	
 }
 
 /**** Font overrides ****/
@@ -83,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 p, div {
-    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -93,16 +109,6 @@ h1 {
 h1.title {
 	font-family: 'Oswald', Georgia, Times, serif;
 	font-weight: 700;
-}
-
-/**** Jumbotron overrrides ****/
-.jumbotron h1 {
-	font-size: 25px;
-}
-@media screen and (min-width: 768px) {
-  .jumbotron h1 {
-    font-size: 63px;
-  }
 }
 
 /**** General overrides ****/
@@ -222,7 +228,8 @@ body {
  
 /**** Bootstrap object overriding ****/
 .jumbotron {
-	padding-top: 10px;
+	padding-left: 5px;
+	padding-top: 5px;
 	padding-bottom: 100px;
 	margin-bottom: 0px;
 	background-image: url("/img/jumbotron_background.png");
@@ -230,6 +237,26 @@ body {
 	
 	/*outline: 2px dashed #572100;*/
     /*outline-offset: -5px;*/
+}
+.jumbotron h1 {
+	font-size: 25px;
+	margin: 5px;
+}
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+	.jumbotron h1 {
+  		font-size: 63px;
+  	}
+}
+
+.navbar {
+	background:#572100;	
+	margin-bottom: 0px;
+	border: none;
+    border-radius: 0px;
 }
 
 .navbar-nav li {
@@ -247,11 +274,18 @@ body {
 	}
 }
 
-.navbar {
-	background:#572100;	
-	margin-bottom: 0px;
-	border: none;
-    border-radius: 0px;
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+  color: #2d6987;
 }
 
 /* Each menu different colour */
