@@ -11,9 +11,9 @@ tags:
 
 ### What is layout_weight?
 Layout weights are a very useful layout mechanism to help create UIs that scale more easily. [The Android Developer Guide says the following:](http://developer.android.com/training/notepad/notepad-ex2.html)
->> layout_weight is used in LinearLayouts to assign **importance** to Views within the layout.
->> <br/> <br />All Views have a default layout_weight of zero, meaning they take up only as much room on the screen as they need to be displayed.
->> <br/> <br />Assigning a value higher than zero will split up the rest of the available space in the parent View, according to the value of each View's layout_weight and its ratio to the overall layout_weight specified in the current layout for this and other View elements.
+> layout_weight is used in LinearLayouts to assign **importance** to Views within the layout.
+> <br/> <br />All Views have a default layout_weight of zero, meaning they take up only as much room on the screen as they need to be displayed.
+> <br/> <br />Assigning a value higher than zero will split up the rest of the available space in the parent View, according to the value of each View's layout_weight and its ratio to the overall layout_weight specified in the current layout for this and other View elements.
 This means you can easily have items in your linear layouts take up the same ratio of space as the layout width or height scales.
 
 <!-- more -->
