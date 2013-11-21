@@ -118,6 +118,21 @@ body {
 	background-color: #e4dfd3;
 }
 
+table {
+	border: 1px solid #572100;
+}
+
+thead {
+	border: 1px solid #572100;	
+	background: #e4dfd3;
+}
+
+td, th {
+	padding: 5px;
+	border-right: 1px solid #572100;
+	border-bottom: 1px solid #572100;	
+}
+
 /*** Monsters ****/
 .navbar-with-monsters {
 	position: relative;
