@@ -18,7 +18,7 @@ I wanted to break it down a little further, and highlight a main conclusion:
 
 
 <div class="alert alert-info">
-<b>Watch:</b> You can use anonymous functions to help correctly scope a variable. 
+   You can use anonymous functions to help correctly scope a variable. 
 </div>
 
 ## Going through the paces
@@ -37,7 +37,8 @@ console.log(values.toString());
 >> 0,1,2,3,4 
 ```
 
-The array is populated with the values as expected. Boring... next? 
+The array is populated with the values as expected. 
+Since generating things with loops is fun, how about taking it a step further... 
 
 ### Example 2: Building an array of functions with a for loop
 
