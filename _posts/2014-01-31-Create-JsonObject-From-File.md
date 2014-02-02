@@ -48,7 +48,7 @@ private void loadTestFile() {
 ```
 
 <div class="alert alert-info">
-<b>Note:</b> It is good practice to place large sets of test data in resource files (and not simply hard code data strings into a test object.
+<b>Note:</b> It is good practice to place large sets of test data in resource files (and not simply hard code data strings into a test object).
 Since a string literal (or constant String expression) cannot be more than 65535 characters(1) you may run into problems manually building
 projects that contain these large strings.
 </div>
