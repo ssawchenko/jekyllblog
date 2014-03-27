@@ -2,14 +2,16 @@
 
 <div class="row">
   <div class="col-md-8 post-preview">
-    <h4>{{ page.date | date_to_long_string }} {<span class="categories">Filed under {{ page.categories | category_links }}</span>}</h4>
+    <p>{% include twittershare.html %}</p>
     <h2>{{ page.title }}</h2>
+    <h4>{{ page.date | date_to_long_string }} - 
+      <span class="categories">Filed under {{ page.categories | category_links }}</span>
+    </h4>
+      
     <p>{{ content }}</p>
-    
-    <p>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="ssawchen" data-size="large">Tweet</a>
-	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </p>
+   
+    <p>{% include twittershare.html %}</p>
+    <p><sub>by Shayla Sawchenko</sub></p>
     
   </div>
   <div class="col-md-4">
@@ -21,4 +23,6 @@
   <li><a href="/">Home</a></li>
 </ul>
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  
 {% include footer.html menu="blog"%}
