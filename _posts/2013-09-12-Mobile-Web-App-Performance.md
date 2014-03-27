@@ -12,11 +12,11 @@ Awhile ago I read an extremely detailed [article on mobile web application perfo
 
 Not actually having to deal with mobile web applications I put this article out of mind; I was, however, very interested to see a recent rebuttal to the above article written by [Brandon Paddock](http://brandonlive.com/2013/07/10/stop-saying-mobile-web-apps-are-slow/) which looks into some the issues a little further, discussing exactly how and where JavaScript can effect mobile performance - discussing the issues regarding the time required to download app assets and the threading model mobile apps are subject to that effect perceived rendering performance etc... 
 
+<!-- more -->
+
 In this rebuttal article, I was most interested in the [cited presentation made by Gaurav Seth](http://channel9.msdn.com/Events/Build/2013/4-313) (sides [here](http://view.officeapps.live.com/op/view.aspx?src=http%3a%2f%2fvideo.ch9.ms%2fsessions%2fbuild%2f2013%2f4-313.pptx)) given at the 2013 San Francisco Build conference; this talk actually gets into some interesting details regarding **how** to write JavaScript with app performance in mind.
 
 Main my focus in this post is to sum up some of the suggestions made which will help increase JavaScript performance across the board. Please do see their articles for all the details. 
-
-<!-- more -->
 
 ## Things you can do in day-to-day JavaScript to help improve performance 
 **Disclaimer:** The items I list below may only provide a miniscule performance increase (given the situation in which they are used), but there is no harm in keeping these in mind as best practices. Also, the focus of the talks were regarding JavaScript code performance, and does not cover more general performance issues such as deferred or async script loading. The suggestions are not restricted to mobile usage, however, the performance gains may be greater on the mobile stage.

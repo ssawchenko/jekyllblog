@@ -19,6 +19,8 @@ IllegalStateException: Content has been consumed
 I puzzled and puzzled until my puzzler was sore, and then I realized that I had put `result.response.getEntity().getContent()` in my **watch window** in an effort to debug the result. 
 Turns out this is a bad idea!
 
+<!-- more -->
+
 <div class="alert alert-info">
 <b>Watch:</b> Never call getContent() from your watch/expression window! Always write to a variable and watch the variable.
 </div>
