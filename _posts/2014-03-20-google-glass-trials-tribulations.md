@@ -32,6 +32,9 @@ help get you started, so instead of duplicating those I figured I would share th
 </div>
 
 ## Getting down to it:
+**My Setup:**
+<img class="img-responsive" src="/img/blog/2014-03-vpn_issue.png" width="400" style="border: 0px">
+
 <a name="VPNConnectionIssues"></a>
 #### VPN Connection Issues
 After hours (and hours) of investigation, it appears that a glass device connected to a device with a VPN connection 
@@ -39,7 +42,7 @@ After hours (and hours) of investigation, it appears that a glass device connect
 including my development web server. I can make requests to my server through my tablet with no problem. The same request made 
 via glass simply timed out.
 
-My setup: [ Local network / VPN ] <== Wifi == [ Nexus 7 ] <== Bluetooth == [ Glass ]
+
 
 * Wireshark snooping on the packets showed that all requests made from the glass to IPs outside of the VPN routing ranges went out 
 successfully. All requests made to IP ranges that would need to route through the VPN never went out on the wire - thus causing the 
@@ -71,10 +74,6 @@ all use OAuth or OAuth2.
 
 * [OAuth Wiki](http://en.wikipedia.org/wiki/OAuth)
 
-Authentication
-- Looks like most glassware apps use oauth/oauth2 to provide authentication (unfamiliar with this)
-- If we get device <--> glass communication we could share eWEB settings (security?)
-
 <a name="Staticcards"></a>
 #### (GDK) Static cards cannot have a PendingIntent attached to them
 There is no way to attach a menu (Intent action) to a static card put into the timeline through the GDK. It is only possible
@@ -96,3 +95,8 @@ My demos proved worthy and our little mobile team is allowed to continue develop
 
 <img class="img-responsive" src="/img/blog/2014-03-Glass.jpg" width="500" height="358">
 <sub>Couldn't resist a Glass selfie or two</sub>
+
+##### Attributions
+* [Glass Icon](http://www.aha-soft.com) 
+
+
