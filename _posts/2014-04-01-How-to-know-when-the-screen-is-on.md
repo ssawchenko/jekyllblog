@@ -47,8 +47,9 @@ private class ScreenBroadcastReciever extends BroadcastReceiver {
 private ScreenBroadcastReciever mScreenReceiver;
 
 // 3. Instantiate and register the BroadcastReceiver
-// Note: In onCreate because I am doing this from within a Service
-// If registering from an Activity it would be best to place this in onResume.
+// Note: onResume appears to be called before ScreenBroadcastReciever.onReceive. 
+// To ensure that we always catch the broadcast, we want to register it in onCreate. 
+// Even if registering from within an Activity, do so from onCreate. 
 @Override
 public void onCreate() {
 	// Setup and register receiver filtering on our two Intents
@@ -59,8 +60,6 @@ public void onCreate() {
 }
 	
 // 4. Unregister the BroadcastReceiver
-// Note: In onDestroy because I am doing this from within a Service
-// If registering from an Activity it would be best to place this in onPause.
 @Override
 public void onDestroy() {
   super.onDestroy();
