@@ -21,8 +21,8 @@ In my Service I created a private BroadcastReceiver, however, feel free to extra
 
 // 1. Create the BroadcastReceiver (within my Service class)
 private class ScreenBroadcastReciever extends BroadcastReceiver {
-	// If extracted to a separate class, useful to query for screen state, 
-	// Note: Since I am using this class privately within my Service, I never call this.	
+	
+	// Query this to know at a given point in time the state of the screen	
 	private boolean mIsScreenOn; 
   	public boolean isScreenOn() {
     	return mIsScreenOn;
@@ -46,7 +46,9 @@ private class ScreenBroadcastReciever extends BroadcastReceiver {
 // 2. Define an instance of the BroadcastReceiver
 private ScreenBroadcastReciever mScreenReceiver;
 
-// 3. Instantiate and register the BroadcastReceiver in onCreate
+// 3. Instantiate and register the BroadcastReceiver
+// Note: In onCreate because I am doing this from within a Service
+// If registering from an Activity it would be best to place this in onResume.
 @Override
 public void onCreate() {
 	// Setup and register receiver filtering on our two Intents
@@ -56,10 +58,15 @@ public void onCreate() {
 	registerReceiver(mScreenReceiver, filter);
 }
 	
-// 4. Unregister the BroadcastReceiver in onDestroy	
+// 4. Unregister the BroadcastReceiver
+// Note: In onDestroy because I am doing this from within a Service
+// If registering from an Activity it would be best to place this in onPause.
 @Override
 public void onDestroy() {
   super.onDestroy();
   unregisterReceiver(mScreenReceiver);
 }
 ```
+
+### References
+[Further Reading](http://thinkandroid.wordpress.com/2010/01/24/handling-screen-off-and-screen-on-intents/)
